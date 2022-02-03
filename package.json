@@ -1,0 +1,24 @@
+{
+  "name": "misc",
+  "version": "1.0.0",
+  "description": "A repository where I created to share realworld usecases of Javascript codes.",
+  "main": "contigiousMaxSum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henok-tesfaye/js-use-cases.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henok-tesfaye/js-use-cases/issues"
+  },
+  "homepage": "https://github.com/henok-tesfaye/js-use-cases#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "jest": "^27.3.1"
+  }
+}
