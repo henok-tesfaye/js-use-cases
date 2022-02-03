@@ -16,6 +16,7 @@
 
 // 1. Pipe function implementation as parameter
 const pipe = (input, ...funcs) => {
+  console.log(input)
   return funcs.reduce((acc, func) => {
     return func(acc)
   }, input)
