@@ -15,7 +15,7 @@
 
 
 // 1. Pipe function implementation as parameter
-const pipe = (input, ...funcs) => {
+export const pipe = (input, ...funcs) => {
   return funcs.reduce((acc, func) => {
     return func(acc)
   }, input)
@@ -32,7 +32,7 @@ const firstCaseResults = {
 
 // 2. Create a closure for the functions, so that we can calculate VAT
 // without passing the functions in each call.
-const pipeWithClosure = (...funcs) => x => {
+export const pipeWithClosure = (...funcs) => x => {
   return funcs.reduce((acc, func) => {
     return func(acc)
   }, x)
@@ -51,8 +51,3 @@ const secondCaseResults = {
   two: calculateVAT(10),
   three: calculateVAT(20)
 }
-
-console.log({
-  firstCaseResults,
-  secondCaseResults
-})
